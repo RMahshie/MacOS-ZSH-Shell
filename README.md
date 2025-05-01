@@ -27,9 +27,9 @@ The implementation is backed by a minimalist disk abstraction, inodes, directory
 | `storage.c/.h`    | High-level filesystem logic (backing implementation)   |
 | `inode.h`         | Inode abstraction (reference count, mode, size, blocks)|
 | `slist.c/.h`      | Linked list utility for path tokenization              |
-| `directory.*`     | Directory management and entries (if included)         |
-| `blocks.*`        | Block allocation and management (if included)          |
-| `bitmap.*`        | Bitmap allocator for inodes/blocks (if included)       |
+| `directory.*`     | Directory management and entries                       |
+| `blocks.*`        | Block allocation and management                        |
+| `bitmap.*`        | Bitmap allocator for inodes/blocks                     |
 | `Makefile`        | Build system using `gcc` and FUSE                      |
 | `test.pl`         | Perl script for automated testing (optional)           |
 
